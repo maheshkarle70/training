@@ -1,3 +1,9 @@
+# ARCHETYPE USED TO GENERATE THIS PROJECT IN AEM6_5
+
+mvn -B archetype:generate -D archetypeGroupId=com.adobe.granite.archetypes -D archetypeArtifactId=aem-project-archetype
+-D archetypeVersion=23 -D aemVersion=cloud -D appTitle="Training" -D appId="training" -D groupId="com.training"
+-D frontendModule=general -D includeExamples=n
+
 # Sample AEM project template
 
 This is a project template for AEM-based applications. It is intended as a best-practice set of examples as well as a potential starting point to develop your own functionality.
