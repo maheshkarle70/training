@@ -11,6 +11,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 
+import static junit.framework.Assert.assertNotNull;
 import static junitx.framework.Assert.assertEquals;
 import static junitx.framework.Assert.assertNotEquals;
 import static org.mockito.Mockito.when;
@@ -47,11 +48,13 @@ public class HelloIndiaModelTest {
 
     @Test
     public void shouldNotMatch(){
+        assertNotNull(helloIndiaModel.getMessage());
         assertNotEquals("Hiiiii",helloIndiaModel.getMessage());
     }
 
     @Test
     public void shouldMatch(){
+        assertNotNull(helloIndiaModel.getMessage());
         assertEquals("Hello Geometrixx",helloIndiaModel.getMessage());
     }
 
